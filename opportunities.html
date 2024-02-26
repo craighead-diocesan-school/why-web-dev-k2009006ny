@@ -1,5 +1,18 @@
-<h1> Web Dev Opportunities </h1>
+<!doctype html>
 
+<head>
+  <meta charset="UTF-8">
+  <title> Your website </title>
+  <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+  <header>
+    <h1> Web Dev Opportunities </h1>
+</header>
+<nav>
+  </nav>
+  <main>
 <p>
   Web development can take you many places in the world and your career. Here are just some of the opportunities you'll have.
 </p>
@@ -10,3 +23,23 @@
   <li> You can earn a great salary - more than 400 jobs on seek.co.nz offering over $100k at the time of writing. </li>
   <li> You can work remotely from anywhere in the world. </li>
 </ul>
+</main>
+
+<fotter>
+
+  </fotter>
+  <style>
+ body {
+    display: grid;
+    grid: " h    h    h  " 3em
+          " .    m    .  " auto
+          " n    .    f  " 5em
+          / 1fr  5fr  1fr;
+  }
+
+  header { grid-area: h; }
+  nav    { grid-area: n; }
+  main   { grid-area: m; }
+  footer { grid-area: f; }
+  </style>
+  </body>

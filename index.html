@@ -1,22 +1,42 @@
-<header>
-  <h1> Why Web Dev? </h1>
-</header>
-<a href="index.html"> Home </a>
-<a href="opportunities.html"> Web Dev Opportunities </a>
-<a href="other-careers.html"> Other Coding Careers </a>
+<!doctype html>
 
-<p>
-  There are plenty of way to learn coding, but here are some reasons why we focus on web dev.
-</p>
+<head>
+  <meta charset="UTF-8">
+  <title> Yuna's website </title>
+  <link rel="icon" href="favicon.ico">
+</head>
 
-<img src="html-logo.svg">
+<body>
+  <header>
+    <h1> Why Web Dev? </h1>
+  </header>
+  <nav>
+    <a href="index.html"> Home </a>
+    <a href="opportunities.html"> Web Dev Opportunities </a>
+    <a href="other-careers.html"> Other Coding Careers </a>
+  </nav>
 
-<ul>
-  <li> You can learn to code starting easy, with HTML and CSS, before getting into the real coding with JavaScript. </li>
-  <li> You can be creative with the visual aesthetic of your applications as well as solve problems in coding. </li>
-  <li> You can build useful applications to make money, help others, or just make your own life easier. </li>
-  <li> Web dev has loads of transferrable skills to other areas, from project management to marketing to accounting to entrepeneurship. </li>
-</ul>
+  <main>
+    <p>
+      There are plenty of way to learn coding, but here are some reasons why we focus on web dev.
+    </p>
+
+    <img src="html-logo.svg">
+
+    <ul>
+      <li> You can learn to code starting easy, with HTML and CSS, before getting into the real coding with JavaScript.
+      </li>
+      <li> You can be creative with the visual aesthetic of your applications as well as solve problems in coding. </li>
+      <li> You can build useful applications to make money, help others, or just make your own life easier. </li>
+      <li> Web dev has loads of transferrable skills to other areas, from project management to marketing to accounting
+        to entrepeneurship. </li>
+    </ul>
+  </main>
+</body>
+
+<fotter>
+  This site was created by Yuna
+</fotter>
 
 <style>
   * {
@@ -25,9 +45,10 @@
 
   h1 {
     text-align: center;
-    color:black;
-    background-color:lightblue;
-    padding:0.3em;
+    background-color: lightblue;
+    color: #80CBC4;
+    font: ;
+    padding: 0.3em;
     border-bottom: solid 3px blueviolet
   }
 
@@ -44,13 +65,43 @@
     color: white;
     background: black;
   }
-  img {
-  width: 50rem;
-}
 
-p,ul{font-family: "Annapurna SIL", serif;
+  img {
+    width: 50rem;
+  }
+
+  p,
+  ul {
+    font-family: "Annapurna SIL", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  body {
+    display: grid;
+    grid: " h    h    h  " 3em 
+          " .    m    .  " auto 
+          " n    .    f  " 5em 
+          / 1fr 5fr 1fr;
+    background-color: #A5D6A7;
+    flex: space-around;
+  }
+
+  header {  font-family: "Kdam Thmor Pro", sans-serif;
   font-weight: 400;
   font-style: normal;
-}
-  
+    grid-area: h;
+  }
+
+  nav {
+    grid-area: n;
+  }
+
+  main {
+    grid-area: m;
+  }
+
+  footer {
+    grid-area: f;
+  }
 </style>

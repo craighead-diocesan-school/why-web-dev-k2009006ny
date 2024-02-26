@@ -1,0 +1,40 @@
+<!doctype html>
+
+<head>
+    <meta charset="UTF-8">
+    <title> Your website </title>
+    <link rel="icon" href="favicon.ico">
+  </head>
+  
+<body>
+    <header>
+      ...
+    </header>
+  
+    <nav>
+      ...
+    </nav>
+  
+    <main>
+      ...
+    </main>
+  
+    <footer>
+      ...
+    </footer>
+  
+    <style>
+       body {
+    display: grid;
+    grid: " h    h    h  " 3em
+          " .    m    .  " auto
+          " n    .    f  " 5em
+          / 1fr  5fr  1fr;
+   }
+
+  header { grid-area: h; }
+  nav    { grid-area: n; }
+  main   { grid-area: m; }
+  footer { grid-area: f; }
+    </style>
+  </body>
